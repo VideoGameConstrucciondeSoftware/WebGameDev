@@ -8,14 +8,32 @@
 }
 
 .bienvenida {
-    text-align: center;
-    padding: 2rem;
+    max-width: 700px;
+    margin: 0 auto 50px auto;
+    padding: 0 16px;
 }
 
+/* Mejora para la bienvenida */
 .bienvenida h1 {
-    font-size: 2.5em;
+    font-size: 3em;
     font-weight: bold;
-    margin-bottom: 10px;
+    color: #00ffd0;
+    text-shadow: 2px 2px 8px #222, 0 0 20px #00ffd0;
+    margin-bottom: 20px;
+    letter-spacing: 2px;
+}
+
+.bienvenida p {
+    font-size: 1.4em;
+    color: #f0f0f0;
+    background: rgba(0, 0, 0, 0.4);
+    border: 5px solid #00ffd0;
+    padding: 16px 24px;
+    border-radius: 20px;
+    box-shadow: 0 2px 12px rgba(0,0,0,0.2);
+    margin: 0 auto;
+    max-width: 600px;
+    line-height: 1.6;
 }
 
 .bienvenida p {
@@ -357,3 +375,21 @@
         font-size: 1em; 
     }
 }
+
+
+.section h2 {
+    color: #00ffd0;
+    font-size: 2em;
+    margin-bottom: 10px;
+    font-family: 'Montserrat', Arial, sans-serif;
+    letter-spacing: 1px;
+}
+
+.section p {
+    color: #e0e0e0;
+    font-size: 1.15em;
+    line-height: 1.7;
+    margin: 0;
+    font-family: 'Open Sans', Arial, sans-serif;
+}
+

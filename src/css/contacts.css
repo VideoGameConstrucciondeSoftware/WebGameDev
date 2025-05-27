@@ -98,3 +98,73 @@ button:hover {
 .toast.error {
   background: #e53935;
 }
+.form-container {
+  width: 100%;
+  max-width: 500px;
+  background: rgba(34, 34, 44, 0.92);
+  padding: 36px 30px;
+  border-radius: 18px;
+  box-shadow: 0 4px 18px rgba(0,0,0,0.18);
+  border: 6px solid #00ffd0;
+}
+
+.form-container h2 {
+  font-size: 2.2em;
+  color: #00ffd0;
+  text-shadow: 2px 2px 8px #222, 0 0 20px #00ffd0;
+  text-align: center;
+  margin-bottom: 22px;
+  letter-spacing: 1.5px;
+  font-family: 'Montserrat', Arial, sans-serif;
+}
+
+label {
+  margin-top: 10px;
+  margin-bottom: 5px;
+  font-weight: bold;
+  color: #f0f0f0;
+}
+
+input,
+select,
+textarea {
+  padding: 12px;
+  border-radius: 7px;
+  border: none;
+  margin-bottom: 14px;
+  font-size: 1rem;
+  background-color: #23232b;
+  color: #fff;
+  box-shadow: 0 2px 8px rgba(0,255,208,0.08);
+  border: 4px solid #00ffd0;
+  transition: border-color 0.3s;
+}
+
+input:focus,
+select:focus,
+textarea:focus {
+  outline: none;
+  border-left: 4px solid #00ffd0;
+  background: #282838;
+}
+
+button {
+  padding: 14px;
+  background-color: #00ffd0;
+  color: #23232b;
+  border: none;
+  border-radius: 8px;
+  font-size: 1.1em;
+  font-weight: bold;
+  cursor: pointer;
+  margin-top: 10px;
+  box-shadow: 0 2px 12px rgba(0,255,208,0.12);
+  transition: background 0.3s, color 0.3s, transform 0.2s;
+}
+
+button:hover {
+  background-color: #23232b;
+  color: #00ffd0;
+  transform: translateY(-2px) scale(1.03);
+  border: 2px solid #00ffd0;
+}

@@ -176,3 +176,129 @@
 html {
     scroll-behavior: smooth;
 }
+
+/* Header general */
+.header-nav {
+  background: rgba(28, 27, 34, 0.98);
+  box-shadow: 0 4px 18px rgba(0,255,208,0.08);
+  border-bottom: 3px solid #00ffd0;
+  padding: 0.5rem 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+/* Logo */
+.logo img {
+  height: 54px;
+  transition: transform 0.2s;
+}
+.logo:hover img {
+  transform: scale(1.08) rotate(-2deg);
+}
+
+/* Menú */
+.menu {
+  list-style: none;
+  display: flex;
+  gap: 2.2rem;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+}
+
+.menu li a {
+  color: #f0f0f0;
+  text-decoration: none;
+  font-size: 1.1em;
+  font-family: 'Montserrat', Arial, sans-serif;
+  padding: 8px 18px;
+  border-radius: 6px;
+  transition: background 0.2s, color 0.2s;
+}
+.menu li a:hover,
+.menu li a:focus {
+  background: #00ffd0;
+  color: #23232b;
+}
+
+/* Botón Jugar */
+.btn-play {
+  background: #00ffd0;
+  color: #23232b;
+  font-weight: bold;
+  padding: 10px 28px;
+  border-radius: 8px;
+  font-size: 1.1em;
+  text-decoration: none;
+  box-shadow: 0 2px 12px rgba(0,255,208,0.12);
+  transition: background 0.2s, color 0.2s, transform 0.2s;
+}
+.btn-play:hover {
+  background: #23232b;
+  color: #00ffd0;
+  border: 2px solid #00ffd0;
+  transform: scale(1.05);
+}
+
+/* Responsive: menú hamburguesa */
+.menu.mobile {
+  display: none;
+}
+.menu-icon {
+  display: none;
+}
+
+/* Responsive styles */
+@media (max-width: 900px) {
+  .menu.desktop, .play-button.desktop {
+    display: none;
+  }
+  .menu.mobile {
+    display: flex;
+    flex-direction: column;
+    gap: 1.2rem;
+    background: rgba(28, 27, 34, 0.98);
+    position: absolute;
+    top: 70px;
+    right: 2rem;
+    padding: 2rem 2.5rem;
+    border-radius: 12px;
+    box-shadow: 0 8px 32px rgba(0,255,208,0.10);
+    z-index: 200;
+  }
+  .menu-icon {
+    display: block;
+    cursor: pointer;
+    width: 36px;
+    height: 36px;
+    position: relative;
+  }
+  .menu-icon span,
+  .menu-icon span:before,
+  .menu-icon span:after {
+    display: block;
+    background: #00ffd0;
+    height: 4px;
+    width: 100%;
+    border-radius: 2px;
+    position: absolute;
+    transition: 0.3s;
+    content: '';
+  }
+  .menu-icon span {
+    top: 16px;
+  }
+  .menu-icon span:before {
+    top: 6px;
+  }
+  .menu-icon span:after {
+    top: 26px;
+  }
+  #menu-toggle:checked ~ .menu.mobile {
+    display: flex;
+  }
+}
