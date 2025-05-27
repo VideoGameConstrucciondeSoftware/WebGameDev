@@ -6,41 +6,34 @@
   <title>Java Leaderboard</title>
   <link rel="stylesheet" href="/src/css/style.css">
 </head>
-<body>
-
+<body class="leaderboard">
 <div class="leaderboard">
+  <!-- Contenedor del html de la barra GamePage-container-->
+  <div id="GamePage-container"></div>   
   <div class="title">Untoten Natch<br> Leaderboard</div>
   <!-- Contenedor del html de la pagina de Barra Desplegable GamePage -->
-  <div id="GamePage-container"></div>    
   <div class="podium">
-    <div class="podium-member">
+    <div class="podium-member1">
       <img src="https://i.ibb.co/q3XGvdb0/FotoBooz.jpg" alt="Jackson">
       <div>Booz<br><small>1847 pts</small></div>
     </div>
-    <div class="podium-member">
+    <div class="podium-member2">
       <img src="/src/img/David.jpg" alt="Eiden">
       <div><strong>David</strong><br><small>2430 pts</small></div>
     </div>
-    <div class="podium-member">
+    <div class="podium-member3">
       <img src="/src/img/Leo.png" alt="Emma Aria">
       <div>Leo<br><small>1674 pts</small></div>
     </div>
   </div>
+  <div id="scoreboard"></div>
 
-  <div class="rankings">
-    <div class="ranking-item"><span>4. Sebastian</span><span>1300</span></div>
-    <div class="ranking-item"><span>5. Sebastian</span><span>1124</span></div>
-    <div class="ranking-item"><span>6. Sebastian</span><span>1120</span></div>
-    <div class="dots">...</div>
-    <div class="ranking-item"><span>101. Sebastian</span><span>900</span></div>
-    <div class="ranking-item"><span>102. Sebastian</span><span>850</span></div>
-    <div class="ranking-item you"><span>103. You</span><span>799</span></div>
-    <div class="ranking-item"><span>104. Sebastian</span><span>649</span></div>
-  </div>
-
+  
+  
   <div class="copyright">Copyright 2025</div>
 </div>
+<script src="/src/js/config.js"></script>
+<script src="/src/js/scoreboard.js"></script>
 <script src="/src/js/main.js"></script>
-
 </body>
 </html>

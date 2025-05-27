@@ -1,9 +1,11 @@
+
 document.getElementById("registerForm").addEventListener("submit", function (event) {
     event.preventDefault(); // Prevenir que el formulario se envíe de manera tradicional
 
     const firstName = document.getElementById("firstName").value;
     const lastName = document.getElementById("lastName").value;
     const email = document.getElementById("email").value;
+    const gamerName = document.getElementById("gameName").value;
     const password = document.getElementById("password").value;
     const termsAccepted = document.getElementById("terms").checked;
 
@@ -13,13 +15,14 @@ document.getElementById("registerForm").addEventListener("submit", function (eve
     }
 
     const userData = {
-        firstName: firstName,
-        lastName: lastName,
+        nombre: firstName,
+        apellido: lastName,
+        gamerName: gamerName,
         email: email,
         password: password
     };
 
-    fetch("https://localhost:7141/api/Register", {
+    fetch(`${API_BASE_URL}/api/usuarios/register`, {
         method: "POST",
         headers: {
             "Content-Type": "application/json"
@@ -34,11 +37,20 @@ document.getElementById("registerForm").addEventListener("submit", function (eve
         }
     })
     .then(data => {
-        alert("User registered successfully");
-        window.location.href = "Login.html"; // Redirect to login page
+        Swal.fire({
+            icon:'success',
+            title: 'Registration successful',
+            text: 'You can now log in.'
+        }).then(() => {
+            window.location.href = "Login.html"; // Redirect to login page
+        });
     })
     .catch(error => {
-        alert(error.message);
+        Swal.fire({
+            icon: 'error',
+            title: 'Register failed',
+            text: error.message
+        });
     });
 });
 

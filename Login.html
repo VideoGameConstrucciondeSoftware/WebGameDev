@@ -6,14 +6,20 @@
     <title>Login</title>
     <link rel="stylesheet" href="/src/css/style.css">
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    
+    
 </head>
 <body class="body-login">
+    <script src="https://accounts.google.com/gsi/client" async defer></script>
+    <script src="https://cdn.jsdelivr.net/npm/jwt-decode/build/jwt-decode.min.js"></script>
+    <script src="/src/js/Login.js"></script>
 
     <div class="login-header">
         <a href="index.html">
             <img src="/src/img/Logo.png" alt="Game Icon" class="game-icon">
         </a>
     </div>
+
 
     <div class="login-container">
 
@@ -48,13 +54,27 @@
                     <span>or</span>
                 </div>
 
-                <button type="button" class="google-btn">
-                    Log in with Google
-                </button>
+                <div id="g_id_onload"
+                    data-client_id="996160211079-ralvh4pdtofc579f5rci8cv54cqc1vf1.apps.googleusercontent.com"
+                    data-context="signin"
+                    data-ux_mode="popup"
+                    data-callback="handleCredentialResponse"
+                    data-auto_prompt="false">
+                </div>
+                <div class="g_id_signin"
+                    data-type="standard"
+                    data-shape="rectangular"
+                    data-theme="outline"
+                    data-text="signin_with"
+                    data-size="large">
+                </div>
+                <!--<div class="google-btn">
+                </div>-->
             </form>
             <p class="register-link">Don't have an account? <a href="./Register.html">Register</a></p>
         </div>
     </div>
+    <script src="/src/js/config.js"></script>
     <script src="/src/js/Login.js"></script>
 
 </body>

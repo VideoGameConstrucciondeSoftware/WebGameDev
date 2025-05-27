@@ -4,22 +4,48 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="/src/css/GamePage.css" />
+    <link rel="stylesheet" href="/src/css/GamePageBar.css" />
 
 </head>
 <body>
-    <aside class="sidebar">
-        <div class="perfil">
-          <div class="icono-perfil"></div>
-          <span>Perfil</span>
-        </div>
-        <nav class="menu">
-          <a href="/GamePage.html" class="menu-item">🎮 Play</a>
-          <a href="#" class="menu-item">👥 Social</a>
-          <a href="/leaderboard.html" class="menu-item">📊 Scoreboard</a>
-          <a href="/Tutoriales.html" class="menu-item">❓ FAQs</a>
-          <a href="#" class="menu-item">⚙️ Settings</a>
-        </nav>
-        <button class="logout" onclick="window.location.href='/Login.html'">⏎ Logout</button>      </aside>
+
+  <header>
+    <nav class="contenedor">
+      <!-- Logo -->
+      <div class="logo">
+        <img src="src/img/Logo.png" alt="Logo del banco" />
+      </div>
+
+      <!-- Menu para escritorio -->
+      <ul class="menu desktop">
+        <li><a href="/GamePage.html">🎮 Play</a></li>
+        <li><a href="#">👥 Social</a></li>
+        <li><a href="/leaderboard.html">📊 Scoreboard</a></li>
+        <li><a href="/Tutoriales.html">❓ FAQs</a></li>
+        <li><a href="/SettingsUser.html">⚙️ Settings Profile</a></li>
+      </ul>
+
+      <!-- Botón Play para escritorio -->
+      <div class="play-button desktop">
+        <a href="Login.html" class="btn-play">Log Out</a>
+      </div>
+
+      <!-- Menú hamburguesa para móvil -->
+      <input type="checkbox" id="menu-toggle" />
+      <label for="menu-toggle" class="menu-icon">
+        <span></span>
+      </label>
+
+      <!-- Menú para móvil -->
+      <ul class="menu mobile">
+        <li><a href="/GamePage.html">🎮 Play</a></li>
+        <li><a href="#">👥 Social</a></li>
+        <li><a href="/leaderboard.html">📊 Scoreboard</a></li>
+        <li><a href="/Tutoriales.html">❓ FAQs</a></li>
+        <li><a href="/SettingsUser.html">⚙️ Settings Profile</a></li>
+      </ul>
+    </nav>
+  </header>
+
 </body>
 </html>

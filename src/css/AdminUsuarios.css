@@ -1,0 +1,179 @@
+/* Estilos generales */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #2a2a2a;
+    color: white;
+}
+
+/* Contenedor principal */
+.container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Estilos del header */
+header-admin {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.header-left {
+    display: flex;
+    gap: 5px;
+}
+
+.header-left h1 {
+    font-size: 2em;
+}
+
+.header-left a{
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: solid;
+    background-color: #6f4cff;
+    width: 40px;
+}
+
+.header-right {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.header-right button,
+.header-right input {
+    margin-left: 10px;
+    padding: 10px;
+    font-size: 1em;
+    border-radius: 5px;
+    border: none;
+}
+
+.create-button {
+    background-color: #6f4cff;
+    color: white;
+    cursor: pointer;
+}
+
+.search-button {
+    background-color: #6f4cff;
+    color: white;
+    cursor: pointer;
+}
+
+.search-input {
+    padding: 10px;
+    border: 1px solid #6f4cff;
+    border-radius: 5px;
+}
+
+/* Estilos de la tabla */
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th,
+td {
+    padding: 10px;
+    text-align: left;
+}
+
+th {
+    background-color: #6f4cff;
+}
+
+tr:nth-child(even) {
+    background-color: #3e3e3e;
+}
+
+tr:hover {
+    background-color: #555555;
+}
+
+.user-panel {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 400px;
+    background-color: #38008e;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    padding: 20px;
+    z-index: 1000;
+}
+
+.panel-header {
+    background-color: #38008e;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.close-panel {
+    background: none;
+    color: white;
+    border: none;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+.panel-content{
+    background-color: #38008e;
+}
+
+.panel-content label {
+    display: block;
+    margin-top: 10px;
+    font-weight: bold;
+    color: #f3f3f3;
+}
+
+.panel-content input {
+    background-color: #bcbcbc;
+    width: 100%;
+    padding: 8px;
+    margin-top: 5px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.panel-buttons {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.panel-buttons button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.edit-button {
+    background-color: #007bff;
+    color: white;
+}
+
+.delete-button {
+    background-color: #dc3545;
+    color: white;
+}

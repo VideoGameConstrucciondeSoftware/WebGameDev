@@ -1,9 +1,30 @@
 .about-texto {
+    padding-top: 2rem;
+    max-width: 700px;
+    margin: 0 auto 50px auto;
+    padding: 0 16px;
     text-align: center;
 }
 
-#img-ods{
-    text-align: center;
+.img-ods {
+    max-width: 80vw; 
+    height: 80vw; 
+    display: flex;
+    justify-content: end;
+    margin: 0 auto;
+    overflow: hidden; /* Asegura que no se desborde */
+    box-sizing: border-box; 
+    
+}
+
+@media (min-width: 1028px) {
+    .img-ods {
+        max-width: 100%;
+        height: auto; 
+        display: block;
+        overflow: hidden; /* Asegura que no se desborde */
+        box-sizing: border-box; 
+    }
 }
 
 .grid-layout {
@@ -26,3 +47,75 @@
 footer {
     text-align: center;
 }
+
+.about-container {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 40px 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.about-title {
+    font-size: 2.8em;
+    color: #00ffd0;
+    text-shadow: 2px 2px 8px #222, 0 0 20px #00ffd0;
+    text-align: center;
+    margin-bottom: 18px;
+    letter-spacing: 2px;
+}
+
+.about-subtitle {
+    font-size: 2em;
+    color: #00ffd0;
+    margin-top: 32px;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.about-desc {
+    font-size: 1.25em;
+    color: #f0f0f0;
+    background: rgba(0,0,0,0.4);
+    border: 5px solid #00ffd0;
+    padding: 16px 24px;
+    border-radius: 20px;
+    box-shadow: 0 2px 12px rgba(0,0,0,0.18);
+    margin: 0 auto 18px auto;
+    max-width: 700px;
+    line-height: 1.7;
+    text-align: center;
+}
+
+.grid-layout {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 50px;
+    justify-content: center;
+    margin-top: 32px;
+}
+
+.grid-item {
+    background: rgba(34, 34, 44, 0.92);
+    border-radius: 12px;
+    padding: 24px 32px;
+    min-width: 260px;
+    max-width: 340px;
+    box-shadow: 0 4px 18px rgba(0,0,0,0.13);
+    border-left: 5px solid #00ffd0;
+}
+
+.grid-item h2 {
+    color: #00ffd0;
+    font-size: 1.3em;
+    margin-bottom: 10px;
+    letter-spacing: 1px;
+}
+
+.grid-item p {
+    color: #e0e0e0;
+    font-size: 1.05em;
+    line-height: 1.6;
+}
+

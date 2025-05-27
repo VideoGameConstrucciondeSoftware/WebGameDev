@@ -9,32 +9,40 @@
   <div id="contact">
     <section id="contact-us-container">
       <div class="form-container">
-        <h2>Contact Us</h2>
+        <h2>Contáctanos</h2>
         <form>
-          <label for="first-name">First Name<span>*</span></label>
+          <label for="first-name">Primer Nombre<span>*</span></label>
           <input type="text" id="first-name" name="first-name" required>
 
-          <label for="last-name">Last Name</label>
+          <label for="last-name">Primer Apellido</label>
           <input type="text" id="last-name" name="last-name">
 
-          <label for="email">Email<span>*</span></label>
+          <label for="email">Correo Electrónico<span>*</span></label>
           <input type="email" id="email" name="email" required>
 
-          <label for="company">Company</label>
+          <label for="company">Compañia</label>
           <input type="text" id="company" name="company">
 
-          <label for="country">Country of Residence</label>
+          <label for="country">País de residencia</label>
           <select id="country" name="country">
-            <option value="">Select...</option>
+            <option value="">Selecciona...</option>
             <option value="mexico">Mexico</option>
             <option value="usa">USA</option>
             <option value="canada">Canada</option>
           </select>
 
-          <button type="submit">Contact Us</button>
+          <label for="mensaje">Mensaje</label>
+          <textarea  type="mensaje" id="mensaje" name="mensaje"></textarea>
+          
+
+          <button type="submit">Contáctanos</button>
         </form>
       </div>
     </section>
   </div>
+  <script src="/src/js/config.js"></script>
+  <script src="/src/js/contactUs.js"></script>    
+
+
 </body>
 </html>

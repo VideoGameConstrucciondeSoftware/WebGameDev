@@ -2,7 +2,7 @@
     background-color: #16151a;
     padding: 40px 60px;
     color: white;
-    font-family: 'Arial Black', sans-serif;
+    font-family: 'Sans-Serif', sans-serif;
   }
   
   .tutoriales-faq h2 {
@@ -83,4 +83,66 @@
       max-width: 100%;
     }
   }
-  
+
+/* Estilo para el menú */
+.overlay-message {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  background-color: rgba(255, 255, 255, 0.1);
+  padding: 15px;
+  border-radius: 12px;
+  z-index: 999;
+  color: white;
+  font-size: 1rem;
+  display: flex;
+  flex-direction: column;
+  width: 200px;
+  pointer-events: auto;
+  backdrop-filter: blur(4px);
+}
+
+.menu-trigger {
+  font-weight: bold;
+  cursor: pointer;
+  margin-bottom: 10px;
+}
+
+.menu-content {
+  display: none;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.overlay-message:hover .menu-content {
+  display: flex;
+}
+
+/* Estilo para los enlaces del menú */
+.menu-item {
+  color: white;
+  text-decoration: none;
+  padding: 8px 12px;
+  border-radius: 15px;
+  background-color: rgba(255, 255, 255, 0.05);
+  transition: background-color 0.3s;
+}
+
+.menu-item:hover {
+  background-color: rgba(255, 255, 255, 0.2);
+}
+
+.logout {
+  background-color: #C0392B;
+  color: white;
+  border: none;
+  padding: 10px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background-color 0.3s;
+}
+
+.logout:hover {
+  background-color: #e60000;
+}
