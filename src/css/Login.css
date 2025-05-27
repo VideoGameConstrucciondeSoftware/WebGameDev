@@ -37,7 +37,7 @@
 }
 
 .game-icon:hover {
-    transform: scale(1.2); /* Efecto de zoom al pasar el mouse */
+    transform: scale(1.2);
 }
 
 /* Contenedor del formulario de login */
