@@ -1,5 +1,8 @@
+import { API_BASE_URL } from './config.js';
+
+const apiUrl = `${API_BASE_URL}/api/usuarios`;
+
 document.addEventListener('DOMContentLoaded', function () {
-    const apiUrl = '`${API_BASE_URL}/api/usuarios`';
     const tableBody = document.querySelector('table tbody');
     const panel = document.createElement('div');
     panel.classList.add('user-panel');

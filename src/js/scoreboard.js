@@ -1,3 +1,5 @@
+import { API_BASE_URL } from './config.js';
+
 async function cargarScoreboard() {
     try {
         const response = await fetch(`${API_BASE_URL}/api/scoreboard`);

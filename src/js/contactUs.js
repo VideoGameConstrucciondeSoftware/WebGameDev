@@ -1,3 +1,5 @@
+import { API_BASE_URL } from './config.js';
+
 function showToast(message, type = 'success') {
     let toast = document.createElement('div');
     toast.className = 'toast ' + type;
@@ -13,7 +15,7 @@ function showToast(message, type = 'success') {
 
 async function enviarContacto(contacto) {
     try {
-        const response = await fetch('`${API_BASE_URL}/api/contacto`', {
+        const response = await fetch(`${API_BASE_URL}/api/contacto`, {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json'

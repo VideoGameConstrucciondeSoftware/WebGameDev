@@ -1,3 +1,5 @@
+import { API_BASE_URL } from './config.js';
+
 document.addEventListener("DOMContentLoaded", () => {
   const form = document.querySelector(".profile-form");
   const profilePicInput = document.getElementById("profile-pic-input");
