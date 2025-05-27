@@ -1,5 +1,3 @@
-import { API_BASE_URL } from './config.js';
-
 const apiUrl = `${API_BASE_URL}/api/usuarios`;
 
 document.addEventListener('DOMContentLoaded', function () {

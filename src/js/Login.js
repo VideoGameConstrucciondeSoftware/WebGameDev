@@ -1,5 +1,3 @@
-import { API_BASE_URL } from './config.js';
-
 document.addEventListener('DOMContentLoaded', function() {
     const loginForm = document.querySelector('form');
 

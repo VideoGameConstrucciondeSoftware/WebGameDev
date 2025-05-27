@@ -1,4 +1,3 @@
-import { API_BASE_URL } from './config.js';
 
 document.getElementById("registerForm").addEventListener("submit", function (event) {
     event.preventDefault(); // Prevenir que el formulario se envíe de manera tradicional

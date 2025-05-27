@@ -1,5 +1,3 @@
-import { API_BASE_URL } from './config.js';
-
 function showToast(message, type = 'success') {
     let toast = document.createElement('div');
     toast.className = 'toast ' + type;
