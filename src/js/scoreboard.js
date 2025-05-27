@@ -1,6 +1,6 @@
 async function cargarScoreboard() {
     try {
-        const response = await fetch('https://localhost:5001/api/scoreboard');
+        const response = await fetch(`${API_BASE_URL}/api/scoreboard`);
         const data = await response.json();
         const podiumIds = [
             { div: ".podium-member2", idx: 0 }, // 1er lugar

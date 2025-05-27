@@ -26,7 +26,7 @@ document.addEventListener('DOMContentLoaded', function() {
             return;
         }
 
-        fetch('https://localhost:5001/api/Login', {  // Asegúrate que sea tu puerto correcto
+        fetch(`${API_BASE_URL}/api/Login`, {  // Asegúrate que sea tu puerto correcto
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json',

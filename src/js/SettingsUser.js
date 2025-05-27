@@ -13,7 +13,7 @@ document.addEventListener("DOMContentLoaded", () => {
   async function cargarDatosUsuario() {
     const token = localStorage.getItem("token");
     try {
-      const response = await fetch("https://localhost:5001/api/settingsUser/me", {
+      const response = await fetch(`${API_BASE_URL}/api/settingsUser/me`, {
         headers: {
           "Authorization": `Bearer ${token}`
         }
@@ -67,7 +67,7 @@ document.addEventListener("DOMContentLoaded", () => {
     };
     console.log(JSON.stringify(data));
     try {
-      const response = await fetch("https://localhost:5001/api/settingsUser/update", {
+      const response = await fetch(`${API_BASE_URL}/api/settingsUser/update`, {
         method: "PUT",
         headers: {
           "Content-Type": "application/json",

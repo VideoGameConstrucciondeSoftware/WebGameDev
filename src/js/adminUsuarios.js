@@ -1,5 +1,5 @@
 document.addEventListener('DOMContentLoaded', function () {
-    const apiUrl = 'https://localhost:7012/api/usuarios';
+    const apiUrl = '`${API_BASE_URL}/api/usuarios`';
     const tableBody = document.querySelector('table tbody');
     const panel = document.createElement('div');
     panel.classList.add('user-panel');

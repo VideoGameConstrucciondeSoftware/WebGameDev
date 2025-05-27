@@ -13,7 +13,7 @@ function showToast(message, type = 'success') {
 
 async function enviarContacto(contacto) {
     try {
-        const response = await fetch('https://localhost:5001/api/contacto', {
+        const response = await fetch('`${API_BASE_URL}/api/contacto`', {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json'

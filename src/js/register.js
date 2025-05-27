@@ -21,7 +21,7 @@ document.getElementById("registerForm").addEventListener("submit", function (eve
         password: password
     };
 
-    fetch("https://localhost:5001/api/usuarios/register", {
+    fetch(`${API_BASE_URL}/api/usuarios/register`, {
         method: "POST",
         headers: {
             "Content-Type": "application/json"
