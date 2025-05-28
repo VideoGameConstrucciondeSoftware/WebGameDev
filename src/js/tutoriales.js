@@ -1,5 +1,6 @@
+const apiUrl = `${API_BASE_URL}/api/faq`;
+
 document.addEventListener('DOMContentLoaded', function () {
-    const apiUrl = 'https://apiuntotennacht-fff3a0dnbjfnamc8.canadacentral-01.azurewebsites.net/api/faq';
     const faqContainer = document.getElementById('faq-container');
     const searchInput = document.querySelector('.faq-search');
     let faqs = [];
