@@ -1,3 +1,14 @@
+function loadComponent(containerId, componentPath, callback) {
+    fetch(componentPath)
+        .then(response => response.text())
+        .then(data => {
+            document.getElementById(containerId).innerHTML = data;
+            if (callback) callback();
+        })
+        .catch(error => console.error(`Error al cargar el componente ${componentPath}:`, error));
+}
+
+
 document.addEventListener("DOMContentLoaded", () => {
     const sidebar = document.getElementById("sidebar");
     const toggleBtn = document.getElementById("toggle-btn");
@@ -14,6 +25,7 @@ document.addEventListener("DOMContentLoaded", () => {
     const popupFrom = document.getElementById("popup-from");
     const popupMessage = document.getElementById("popup-message");
     const closeBtn = document.getElementById("close-btn");
+
 
     // Toggle notification panel
     notificationBtn.addEventListener("click", () => {
@@ -38,4 +50,11 @@ document.addEventListener("DOMContentLoaded", () => {
     closeBtn.addEventListener("click", () => {
         popup.style.display = "none";
     });
+
+    loadComponent('chatbot-container', './src/components/chatBot.html', function() {
+        const script = document.createElement('script');
+        script.src = '/src/js/chatBot.js';
+        document.body.appendChild(script);
+    });
+
 });

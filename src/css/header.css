@@ -5,174 +5,184 @@
     box-sizing: border-box;
   }
   
-  body {
-    font-family: sans-serif;
-  }
-  
-  header {
-    background-color: #413e3e;
-    padding: 1rem;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-  }
-  
-  /* Contenedor nav */
-  nav.contenedor {
+body {
+  font-family: sans-serif;
+}
+
+header {
+  background-color: #413e3e;
+  padding: 1rem;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.fixed-header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+  padding-bottom: 1rem;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+}
+
+/* Contenedor nav */
+nav.contenedor {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  position: relative;
+}
+
+/* Logo */
+.logo img {
+  width: 120px;
+  height: 80px;
+  border-radius: 1rem;
+}
+
+/* Menú común */
+.menu {
+  list-style: none;
+}
+
+.menu li {
+  margin: 1rem 0;
+}
+
+.menu a {
+  color: #e3dede;
+  text-decoration: none;
+  font-size: 1.2rem;
+}
+
+.menu a:hover {
+  color: #0077c0;
+}
+
+/* Botón de Play */
+.btn-play {
+  padding: 0.6rem 1rem;
+  background-color: #0077c0;
+  color: white;
+  border-radius: 0.5rem;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+/* Menu-icon para móvil */
+.menu-icon {
+  display: none;
+  width: 40px;
+  height: 40px;
+  position: relative;
+  cursor: pointer;
+}
+
+.menu-icon span {
+  display: block;
+  width: 25px;
+  height: 3px;
+  background-color: #ffffff;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.menu-icon span::before,
+.menu-icon span::after {
+  content: '';
+  display: block;
+  width: 25px;
+  height: 3px;
+  background-color: #ffffff;
+  position: absolute;
+  left: 0;
+  transition: 0.3s;
+}
+
+.menu-icon span::before {
+  top: -8px;
+}
+
+.menu-icon span::after {
+  top: 8px;
+}
+
+#menu-toggle {
+  display: none;
+}
+
+/* Menú para móvil oculto */
+.menu.mobile {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100%;
+  background-color: #6d6969;
+  padding: 1rem 0;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.3s ease-in-out;
+}
+
+/* Mostrar menú móvil al activar toggle */
+#menu-toggle:checked ~ .menu.mobile {
+  opacity: 1;
+  visibility: visible;
+}
+
+/* Transformar ícono hamburguesa al abrir */
+#menu-toggle:checked + .menu-icon span {
+  transform: translate(-50%, -50%) rotate(45deg);
+}
+
+#menu-toggle:checked + .menu-icon span::before {
+  transform: rotate(-90deg);
+  top: 0;
+}
+
+#menu-toggle:checked + .menu-icon span::after {
+  transform: rotate(90deg);
+  top: 0;
+}
+
+/* === Responsive Design === */
+
+/* Escritorio */
+@media (min-width: 768px) {
+  .menu.desktop {
     display: flex;
-    align-items: center;
-    justify-content: space-between;
-    flex-wrap: wrap;
-    position: relative;
+    gap: 2rem;
   }
-  
-  /* Logo */
-  .logo img {
-    width: 120px;
-    height: 80px;
-    border-radius: 1rem;
+
+  .play-button.desktop {
+    display: block;
   }
-  
-  /* Menú común */
-  .menu {
-    list-style: none;
-  }
-  
-  .menu li {
-    margin: 1rem 0;
-  }
-  
-  .menu a {
-    color: #e3dede;
-    text-decoration: none;
-    font-size: 1.2rem;
-  }
-  
-  .menu a:hover {
-    color: #0077c0;
-  }
-  
-  /* Botón de Play */
-  .btn-play {
-    padding: 0.6rem 1rem;
-    background-color: #0077c0;
-    color: white;
-    border-radius: 0.5rem;
-    text-decoration: none;
-    font-weight: bold;
-  }
-  
-  /* Menu-icon para móvil */
+
+  .menu.mobile,
   .menu-icon {
     display: none;
-    width: 40px;
-    height: 40px;
-    position: relative;
-    cursor: pointer;
   }
-  
-  .menu-icon span {
-    display: block;
-    width: 25px;
-    height: 3px;
-    background-color: #ffffff;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+
+  .menu li {
+    margin: 0;
   }
-  
-  .menu-icon span::before,
-  .menu-icon span::after {
-    content: '';
-    display: block;
-    width: 25px;
-    height: 3px;
-    background-color: #ffffff;
-    position: absolute;
-    left: 0;
-    transition: 0.3s;
-  }
-  
-  .menu-icon span::before {
-    top: -8px;
-  }
-  
-  .menu-icon span::after {
-    top: 8px;
-  }
-  
-  #menu-toggle {
+}
+
+/* Móvil */
+@media (max-width: 767px) {
+  .menu.desktop,
+  .play-button.desktop {
     display: none;
   }
-  
-  /* Menú para móvil oculto */
-  .menu.mobile {
-    position: absolute;
-    top: 100%;
-    left: 0;
-    width: 100%;
-    background-color: #6d6969;
-    padding: 1rem 0;
-    opacity: 0;
-    visibility: hidden;
-    transition: opacity 0.3s ease-in-out;
+
+  .menu-icon {
+    display: block;
   }
-  
-  /* Mostrar menú móvil al activar toggle */
-  #menu-toggle:checked ~ .menu.mobile {
-    opacity: 1;
-    visibility: visible;
-  }
-  
-  /* Transformar ícono hamburguesa al abrir */
-  #menu-toggle:checked + .menu-icon span {
-    transform: translate(-50%, -50%) rotate(45deg);
-  }
-  
-  #menu-toggle:checked + .menu-icon span::before {
-    transform: rotate(-90deg);
-    top: 0;
-  }
-  
-  #menu-toggle:checked + .menu-icon span::after {
-    transform: rotate(90deg);
-    top: 0;
-  }
-  
-  /* === Responsive Design === */
-  
-  /* Escritorio */
-  @media (min-width: 768px) {
-    .menu.desktop {
-      display: flex;
-      gap: 2rem;
-    }
-  
-    .play-button.desktop {
-      display: block;
-    }
-  
-    .menu.mobile,
-    .menu-icon {
-      display: none;
-    }
-  
-    .menu li {
-      margin: 0;
-    }
-  }
-  
-  /* Móvil */
-  @media (max-width: 767px) {
-    .menu.desktop,
-    .play-button.desktop {
-      display: none;
-    }
-  
-    .menu-icon {
-      display: block;
-    }
-  }
-  
+}
+
 html {
     scroll-behavior: smooth;
 }

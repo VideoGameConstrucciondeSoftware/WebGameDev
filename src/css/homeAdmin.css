@@ -173,3 +173,5 @@ body {
     font-size: 18px;
     cursor: pointer;
 }
+
+@import url(./chatBot.css);

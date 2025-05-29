@@ -10,7 +10,9 @@ function loadComponent(containerId, componentPath, callback) {
 }
 
 // Cargar el componente header.html
-loadComponent('header-container', './src/components/header.html');
+loadComponent('header-container', './src/components/header.html', function() {
+    document.getElementById('header-container').classList.add('fixed-header');
+});
 loadComponent('home-container', './src/home.html');
 loadComponent('aboutUs-container', './src/about.html');
 loadComponent('ourTeam-container', './src/OurTeam.html');
