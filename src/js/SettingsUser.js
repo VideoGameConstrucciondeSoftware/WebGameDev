@@ -12,8 +12,9 @@ document.addEventListener("DOMContentLoaded", () => {
   // Cargar datos actuales del usuario
   async function cargarDatosUsuario() {
     const token = localStorage.getItem("token");
+    console.log(token);
     try {
-      const response = await fetch(`${API_BASE_URL}/api/settingsUser/me`, {
+      const response = await fetch(`${API_BASE_URL}/api/usuarios/me`, {
         headers: {
           "Authorization": `Bearer ${token}`
         }
