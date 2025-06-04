@@ -37,6 +37,14 @@ document.addEventListener('DOMContentLoaded', function() {
                 password: password 
             })
         })
+        .then(async res => {
+            if (res.status === 404) {
+            const data = await res.json();
+            // Redirige a la página de registro y pasa el correo
+            window.location.href = `${data.redirectTo}?email=${encodeURIComponent(data.email)}`;
+            return;
+            }
+        })
         .then(response => {
             if (response.ok) {
                 return response.json();
