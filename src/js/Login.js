@@ -42,8 +42,10 @@ document.addEventListener('DOMContentLoaded', function() {
             const data = await res.json();
             // Redirige a la página de registro y pasa el correo
             window.location.href = `${data.redirectTo}?email=${encodeURIComponent(data.email)}`;
-            return;
+            // Lanza un error para detener la cadena de promesas
+            throw new Error('Redirecting to registration');
             }
+            return res;
         })
         .then(response => {
             if (response.ok) {
