@@ -20,6 +20,7 @@ document.addEventListener("DOMContentLoaded", () => {
       });
       if (!response.ok) throw new Error("No se pudieron cargar los datos.");
       const data = await response.json();
+      console.log(data);
       if (data.gamerName) gamerNameInput.value = data.gamerName;
       // No mostrar la contraseña por seguridad, pero puedes dejar el campo vacío
       if (data.imagen) {

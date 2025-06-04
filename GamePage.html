@@ -16,7 +16,6 @@
           </div>
             <div class="contenedor2" >
               <p class="descripcion ">Juega Untoten Nacht, ya disponible en PC!</p>
-              <a href="https://videogameconstrucciondesoftware.github.io/Juego/">
                 <button class="jugar-btn">Jugar Ahora</button>
               </a>
             </div>
@@ -24,5 +23,18 @@
   </main>
   <script src="/src/js/config.js"></script>
   <script src="/src/js/main.js"></script>
+  <script>
+    const jugarBtn = document.querySelector(".jugar-btn");
+    jugarBtn.addEventListener("click", function () {
+      const token = localStorage.getItem("jwt_token");
+      if (token) {
+        // Pasa el token como parámetro en la URL
+        const url = `https://videogameconstrucciondesoftware.github.io/Juego/?token=${token}`;
+        window.location.href = url;
+      } else {
+        alert("Por favor inicia sesión antes de jugar.");
+      }
+    });
+</script>
 </body>
 </html>
