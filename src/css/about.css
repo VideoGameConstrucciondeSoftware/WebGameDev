@@ -58,6 +58,7 @@ footer {
 }
 
 .about-title {
+    padding-top: 8rem;
     font-size: 2.8em;
     color: #00ffd0;
     text-shadow: 2px 2px 8px #222, 0 0 20px #00ffd0;

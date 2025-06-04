@@ -17,7 +17,3 @@
 @import url('./SettingsUser.css');
 @import url('./chatBot.css');
 
-/* para acomodar el fixed header*/
-#home-container {
-    margin-top: 16vh; 
-}
