@@ -6,8 +6,8 @@
 
 body {
     font-family: Arial, sans-serif;
-    background-color: #2f2f2f;
-    color: white;
+    background-color: #2C3E50;
+    color: #BEC3C7;
     text-align: center;
     padding: 20px;
 }
@@ -19,7 +19,7 @@ h1 {
 
 p {
     font-size: 18px;
-    color: #aaa;
+    color: #BEC3C7;
     margin-bottom: 30px;
 }
 
@@ -32,7 +32,7 @@ p {
 }
 
 .teamBox {
-    background-color: #333;
+    background-color: #1E2A36;
     border-radius: 35px;
     width: 300px;
     padding: 20px;
@@ -66,8 +66,8 @@ p {
 
 .team-title {
     font-size: 2.8em;
-    color: #00ffd0;
-    text-shadow: 2px 2px 8px #222, 0 0 20px #00ffd0;
+    color: #C1392B;
+    text-shadow: 2px 2px 8px #222, 0 0 20px #C1392B;
     text-align: center;
     margin-bottom: 18px;
     letter-spacing: 2px;
@@ -89,7 +89,7 @@ p {
     font-size: 1.2em;
     color: #f0f0f0;
     background: rgba(0,0,0,0.4);
-    border: 5px solid #00ffd0;
+    border: 5px solid #C1392B;
     padding: 16px 24px;
     border-radius: 20px;
     box-shadow: 0 2px 12px rgba(0,0,0,0.18);
@@ -106,12 +106,12 @@ p {
     padding: 28px 20px;
     box-shadow: 0 4px 18px rgba(0,0,0,0.13);
     margin: 10px;
-    border-bottom: 5px solid #00ffd0;
+    border-bottom: 5px solid #C1392B;
     transition: transform 0.2s, box-shadow 0.2s;
 }
 .teamBox:hover {
     transform: translateY(-8px) scale(1.03);
-    box-shadow: 0 8px 32px rgba(0,255,208,0.15), 0 4px 18px rgba(0,0,0,0.18);
+    box-shadow: 0 8px 32px #C1392B(0,255,208,0.15), 0 4px 18px #C1392B(0,0,0,0.18);
 }
 
 .profile-img {
@@ -120,7 +120,7 @@ p {
     border-radius: 50%;
     object-fit: cover;
     margin-bottom: 15px;
-    border: 3px solid #00ffd0;
+    border: 3px solid #C1392B;
     box-shadow: 0 2px 8px rgba(0,255,208,0.12);
 }
 
@@ -128,7 +128,7 @@ p {
     font-size: 1.5em;
     font-weight: bold;
     margin-bottom: 8px;
-    color: #00ffd0;
+    color: #C1392B;
     letter-spacing: 1px;
 }
 

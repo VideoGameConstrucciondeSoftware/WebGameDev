@@ -1,11 +1,11 @@
 
 /* Fondos y cosas generales */
 .fondo1 {
-    background-color: #18171C;
+    background-color: #1c1b22;
 }
 
 .fondo2 {
-    background-color: #211F28;
+    background-color: #1c1b22;
 }
 
 .home {
@@ -21,8 +21,8 @@
 .bienvenida h1 {
     font-size: 3em;
     font-weight: bold;
-    color: #00ffd0;
-    text-shadow: 2px 2px 8px #222, 0 0 20px #00ffd0;
+    color: #C1392B;
+    text-shadow: 2px 2px 8px #222, 0 0 20px #C1392B;
     margin-bottom: 20px;
     letter-spacing: 2px;
 }
@@ -31,7 +31,7 @@
     font-size: 1.4em;
     color: #f0f0f0;
     background: rgba(0, 0, 0, 0.4);
-    border: 5px solid #00ffd0;
+    border: 5px solid #C1392B;
     padding: 16px 24px;
     border-radius: 20px;
     box-shadow: 0 2px 12px rgba(0,0,0,0.2);
@@ -64,7 +64,7 @@
     flex-direction: column;
     margin: 20px;
     padding: 20px;
-    background-color: #2a2a2a;
+    background-color: black;
     border-radius: 10px;
 }
 
@@ -392,7 +392,7 @@
 
 
 .section h2 {
-    color: #00ffd0;
+    color: #C1392B;
     font-size: 2em;
     margin-bottom: 10px;
     font-family: 'Montserrat', Arial, sans-serif;

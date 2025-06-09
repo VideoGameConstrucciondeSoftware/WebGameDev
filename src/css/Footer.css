@@ -1,6 +1,6 @@
 .footer {
-    background-color: #16151b;
-    color: white;
+    background-color: #1E2A36;
+    color: #BEC3C7;
     text-align: center;
     padding: 40px 20px 20px;
     font-family: 'Arial', sans-serif;
@@ -14,7 +14,7 @@
     margin: 0 10px;
     font-size: 20px;
     color: white;
-    background-color: #2a2a2e;
+    background-color: #1E2A36;
     padding: 10px;
     border-radius: 50%;
     transition: background-color 0.3s;
@@ -62,20 +62,20 @@
 }
 
 .footer {
-    background-color: #16151b;
-    color: white;
+    background-color: black;
+    color: #BEC3C7;
     text-align: center;
     padding: 40px 20px 20px;
     font-family: 'Montserrat', Arial, sans-serif;
-    border-top: 4px solid #00ffd0;
+    border-top: 4px solid #C1392B;
     box-shadow: 0 -4px 18px rgba(0,255,208,0.08);
 }
 
 .footer-social a {
     margin: 0 10px;
     font-size: 22px;
-    color: #00ffd0;
-    background-color: #23232b;
+    color: #C1392B;
+    background-color: #1E2A36;
     padding: 12px;
     border-radius: 50%;
     transition: background 0.3s, color 0.3s, transform 0.2s;
@@ -83,8 +83,8 @@
     box-shadow: 0 2px 8px rgba(0,255,208,0.08);
 }
 .footer-social a:hover {
-    background-color: #00ffd0;
-    color: #23232b;
+    background-color: #C1392B;
+    color: #34495E;
     transform: scale(1.1) rotate(-6deg);
 }
 
@@ -109,8 +109,8 @@
     border-bottom: 2px solid transparent;
 }
 .footer-nav li a:hover {
-    color: #00ffd0;
-    border-bottom: 2px solid #00ffd0;
+    color: #C1392B;
+    border-bottom: 2px solid #C1392B;
 }
 
 .footer hr {

@@ -60,8 +60,8 @@ footer {
 .about-title {
     padding-top: 8rem;
     font-size: 2.8em;
-    color: #00ffd0;
-    text-shadow: 2px 2px 8px #222, 0 0 20px #00ffd0;
+    color: #C1392B;
+    text-shadow: 2px 2px 8px #222, 0 0 20px #C1392B;
     text-align: center;
     margin-bottom: 18px;
     letter-spacing: 2px;
@@ -69,7 +69,7 @@ footer {
 
 .about-subtitle {
     font-size: 2em;
-    color: #00ffd0;
+    color: #C1392B;
     margin-top: 32px;
     margin-bottom: 10px;
     text-align: center;
@@ -78,11 +78,11 @@ footer {
 .about-desc {
     font-size: 1.25em;
     color: #f0f0f0;
-    background: rgba(0,0,0,0.4);
-    border: 5px solid #00ffd0;
+    background: #1E2A36(0,0,0,0.4);
+    border: 5px solid #C1392B;
     padding: 16px 24px;
     border-radius: 20px;
-    box-shadow: 0 2px 12px rgba(0,0,0,0.18);
+    box-shadow: 0 2px 12px #1E2A36(0,0,0,0.18);
     margin: 0 auto 18px auto;
     max-width: 700px;
     line-height: 1.7;
@@ -98,17 +98,17 @@ footer {
 }
 
 .grid-item {
-    background: rgba(34, 34, 44, 0.92);
+    background: #1E2A36(34, 34, 44, 0.92);
     border-radius: 12px;
     padding: 24px 32px;
     min-width: 260px;
     max-width: 340px;
-    box-shadow: 0 4px 18px rgba(0,0,0,0.13);
-    border-left: 5px solid #00ffd0;
+    box-shadow: 0 4px 18px #1E2A36(0,0,0,0.13);
+    border-left: 5px solid #C1392B;
 }
 
 .grid-item h2 {
-    color: #00ffd0;
+    color: #C1392B;
     font-size: 1.3em;
     margin-bottom: 10px;
     letter-spacing: 1px;
