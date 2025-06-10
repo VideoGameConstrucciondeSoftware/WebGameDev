@@ -1,119 +1,68 @@
+/* Reset básico */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
+/* Fuente general */
 body {
-    font-family: Arial, sans-serif;
-    background-color: #2C3E50;
-    color: #BEC3C7;
-    text-align: center;
-    padding: 20px;
-}
-
-h1 {
-    font-size: 36px;
-    margin-bottom: 10px;
-}
-
-p {
-    font-size: 18px;
-    color: #BEC3C7;
-    margin-bottom: 30px;
-}
-
-.boxContainer {
-    display: flex;
-    justify-content: space-evenly;
-    gap: 30px;
-    flex-wrap: wrap;
-    padding: 10px;
-}
-
-.teamBox {
+    font-family: 'Roboto', sans-serif;
     background-color: #1E2A36;
-    border-radius: 35px;
-    width: 300px;
-    padding: 20px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-    margin: 10px;
+    color: #fff;
 }
 
-.profile-img {
-    width: 150px;
-    height: 150px;
-    border-radius: 50%;
-    object-fit: cover;
-    margin-bottom: 15px;
-}
-
-.name {
-    font-size: 30px;
-    font-weight: bold;
-    margin-bottom: 5px;
-    color: white;
-}
-
-.bio {
-    font-size: 14px;
-    color: white;
-}
-
-.altura {
-    padding: 10rem;
-}
-
+/* Títulos */
 .team-title {
     font-size: 2.8em;
     color: #C1392B;
-    text-shadow: 2px 2px 8px #222, 0 0 20px #C1392B;
+    text-shadow: 2px 2px 8px #000, 0 0 20px #C1392B;
     text-align: center;
-    margin-bottom: 18px;
-    letter-spacing: 2px;
-    font-family: 'Montserrat', Arial, sans-serif;
+    margin-bottom: 20px;
+    font-family: 'Press Start 2P', monospace;
 }
 
-.contenedortarjeta {
-    max-width: 100%;
-}
-
-.team-section {
-    background-color: #1c1b22;
-    color: white;
-    padding: 10rem 1rem 12rem 2rem;
-    text-align: center;
-}
-
-.team-desc {
-    font-size: 1.2em;
-    color: #f0f0f0;
-    background: rgba(0,0,0,0.4);
-    border: 5px solid #C1392B;
-    padding: 16px 24px;
-    border-radius: 20px;
+/* Descripción debajo del título */
+.technologies-desc {
+    font-size: 1em;
+    color: #e0e0e0;
+    background: rgba(0, 0, 0, 0.3);
+    border: 3px solid #C1392B;
+    padding: 14px 22px;
+    border-radius: 16px;
     box-shadow: 0 2px 12px rgba(0,0,0,0.18);
-    margin: 0 auto 32px auto;
-    max-width: 700px;
-    line-height: 1.7;
+    margin: 0 auto 40px auto;
+    max-width: 650px;
+    line-height: 1.6;
     text-align: center;
 }
 
+/* Contenedor de todas las tarjetas */
+.boxContainer {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 32px;
+    padding: 0 2rem;
+}
+
+/* Tarjetas individuales */
 .teamBox {
-    background: rgba(34, 34, 44, 0.92);
-    border-radius: 18px;
+    background-color: #000;
+    border-radius: 24px;
     width: 300px;
     padding: 28px 20px;
-    box-shadow: 0 4px 18px rgba(0,0,0,0.13);
-    margin: 10px;
-    border-bottom: 5px solid #C1392B;
-    transition: transform 0.2s, box-shadow 0.2s;
-}
-.teamBox:hover {
-    transform: translateY(-8px) scale(1.03);
-    box-shadow: 0 8px 32px #C1392B(0,255,208,0.15), 0 4px 18px #C1392B(0,0,0,0.18);
+    box-shadow: 0 4px 12px rgba(0,0,0,0.35);
+    border: 2px solid #C1392B;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
 
+.teamBox:hover {
+    transform: translateY(-8px) scale(1.03);
+    box-shadow: 0 0 24px #C1392B, 0 0 8px rgba(255, 0, 0, 0.3);
+}
+
+/* Foto circular con borde */
 .profile-img {
     width: 120px;
     height: 120px;
@@ -121,20 +70,33 @@ p {
     object-fit: cover;
     margin-bottom: 15px;
     border: 3px solid #C1392B;
-    box-shadow: 0 2px 8px rgba(0,255,208,0.12);
+    box-shadow: 0 2px 8px rgba(0,0,0,0.4);
 }
 
+/* Nombre */
 .name {
-    font-size: 1.5em;
+    font-size: 1.4em;
     font-weight: bold;
-    margin-bottom: 8px;
     color: #C1392B;
-    letter-spacing: 1px;
+    margin-bottom: 10px;
+    font-family: 'Press Start 2P', monospace;
 }
 
+/* Bio */
 .bio {
     font-size: 1em;
-    color: #e0e0e0;
+    color: #d3d3d3;
     line-height: 1.5;
-    margin: 0;
+    text-align: justify;
+}
+
+/* Ajustes de sección */
+.team-section {
+    padding: 6rem 1rem 10rem 1rem;
+    text-align: center;
+}
+
+/* Para asegurar altura completa y eliminar márgenes generales */
+html, body {
+    height: 100%;
 }

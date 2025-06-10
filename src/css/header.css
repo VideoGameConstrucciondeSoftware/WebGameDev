@@ -5,8 +5,8 @@
     box-sizing: border-box;
   }
   
-body {
-  font-family: sans-serif;
+body, header, nav, .menu a, .btn-play {
+  font-family: 'Roboto', sans-serif;
 }
 
 header {
@@ -55,14 +55,20 @@ nav.contenedor {
   list-style: none;
 }
 
-.menu li {
-  margin: 1rem 0;
+.menu li a {
+  font-family: 'Press Start 2P', cursive;
+  font-size: 1.1em;
+  color: #f0f0f0;
+  text-decoration: none;
+  padding: 8px 18px;
+  border-radius: 6px;
+  transition: background 0.2s, color 0.2s;
 }
 
-.menu a {
-  color: #e3dede;
-  text-decoration: none;
-  font-size: 1.2rem;
+header {
+  background-color: #000000;
+  padding: 4rem;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
 .menu a:hover {
@@ -71,12 +77,15 @@ nav.contenedor {
 
 /* Botón de Play */
 .btn-play {
-  padding: 0.6rem 1rem;
-  background-color: #C1392B;
-  color: white;
-  border-radius: 0.5rem;
-  text-decoration: none;
+  background: #12131a;
+  color: #ffffff;
   font-weight: bold;
+  padding: 10px 28px;
+  border-radius: 8px;
+  font-size: 1.1em;
+  text-decoration: none;
+  box-shadow: 0 2px 12px rgba(0, 255, 208, 0.12);
+  transition: background 0.2s, color 0.2s, transform 0.2s;
 }
 
 /* Menu-icon para móvil */

@@ -1,8 +1,8 @@
 body {
   margin: 0;
   padding: 0;
-  font-family: sans-serif;
-  background-color: #1c1b22;
+  font-family: 'Roboto', sans-serif;
+  background-color: #12131a;
   color: #BEC3C7;
 }
 
@@ -24,8 +24,13 @@ body {
 }
 
 .form-container h2 {
+  font-family: 'Press Start 2P', cursive;
+  font-size: 1.6em;
+  color: #C1392B;
+  text-shadow: 2px 2px 8px #222, 0 0 20px #C1392B;
   text-align: center;
-  margin-bottom: 20px;
+  margin-bottom: 1.5rem;
+  letter-spacing: 1.5px;
 }
 
 form {
@@ -36,7 +41,9 @@ form {
 label {
   margin-top: 10px;
   margin-bottom: 5px;
-  font-weight: bold;
+  font-weight: 700;
+  color: #f0f0f0;
+  font-family: 'Roboto', sans-serif;
 }
 
 label span {
@@ -45,29 +52,46 @@ label span {
 }
 
 input,
-select {
-  padding: 10px;
-  border-radius: 5px;
+select,
+textarea {
+  padding: 12px;
+  border-radius: 7px;
   border: none;
-  margin-bottom: 10px;
+  margin-bottom: 14px;
   font-size: 1rem;
-  background-color: #ccc;
-  color: #1c1b22;
+  background-color: #1c1b22;
+  color: #fff;
+  box-shadow: 0 2px 8px rgba(255, 0, 0, 0.08);
+  border: 4px solid #C1392B;
+  transition: border-color 0.3s;
+  font-family: 'Roboto', sans-serif;
+}
+
+input:focus,
+select:focus,
+textarea:focus {
+  outline: none;
+  border-left: 4px solid #C1392B;
+  background: #1c1b22;
 }
 
 button {
   padding: 12px;
-  background-color: #1c1b22;
-  color: white;
-  border: 2px solid white;
+  background-color: #C1392B;
+  color: #1c1b22;
+   border: none;
+  border-radius: 8px;
   border-radius: 5px;
   cursor: pointer;
-  transition: background 0.3s ease;
+  transition: background 0.3s, color 0.3s, transform 0.2s;
+  font-family: 'Press Start 2P', cursive;
 }
 
 button:hover {
-  background-color: white;
-  color: #1c1b22;
+  background-color: #221b1b;
+  color: #C1392B;
+  transform: translateY(-2px) scale(1.03);
+  border: 2px solid #C1392B;
 }
 
 #mensaje {
@@ -75,7 +99,6 @@ button:hover {
   resize: vertical;
 }
 
-/* Puedes poner esto al final de src/css/contacts.css */
 .toast {
   position: fixed;
   top: 20px;
@@ -101,7 +124,7 @@ button:hover {
 .form-container {
   width: 100%;
   max-width: 500px;
-  background: #1E2A36(34, 34, 44, 0.92);
+  background: #361e1e(34, 34, 44, 0.92);
   padding: 36px 30px;
   border-radius: 18px;
   box-shadow: 0 4px 18px rgba(0,0,0,0.18);
@@ -111,11 +134,10 @@ button:hover {
 .form-container h2 {
   font-size: 2.2em;
   color: #C1392B;
-  text-shadow: 2px 2px 8px #222, 0 0 20px #C1392B;
   text-align: center;
   margin-bottom: 22px;
   letter-spacing: 1.5px;
-  font-family: 'Montserrat', Arial, sans-serif;
+  font-family: 'Press Start 2P', cursive;
 }
 
 label {
@@ -135,7 +157,7 @@ textarea {
   font-size: 1rem;
   background-color: #1c1b22;
   color: #fff;
-  box-shadow: 0 2px 8px rgba(0,255,208,0.08);
+  box-shadow: 0 2px 8px rgba(255, 0, 0, 0.08);
   border: 4px solid #C1392B;
   transition: border-color 0.3s;
 }
@@ -158,12 +180,12 @@ button {
   font-weight: bold;
   cursor: pointer;
   margin-top: 10px;
-  box-shadow: 0 2px 12px rgba(0,255,208,0.12);
+  box-shadow: 0 2px 12px rgba(255, 0, 0, 0.12);
   transition: background 0.3s, color 0.3s, transform 0.2s;
 }
 
 button:hover {
-  background-color: #1c1b22;
+  background-color: #221b1b;
   color: #C1392B;
   transform: translateY(-2px) scale(1.03);
   border: 2px solid #C1392B;

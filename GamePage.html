@@ -8,19 +8,24 @@
 </head>
 <body>
   <main>
-      <!-- Contenedor del html de la barra GamePage-container-->
-      <div class="imagen-fondo">
-        <div id="GamePage-container"></div> 
-          <div class="contenedor3">
-            <h1 class="titulo ">Untoten Nacht</h1>
-          </div>
-            <div class="contenedor2" >
-              <p class="descripcion ">Juega Untoten Nacht, ya disponible en PC!</p>
-                <button class="jugar-btn">Jugar Ahora</button>
-              </a>
-            </div>
+    <!-- Contenedor principal -->
+    <div class="imagen-fondo">
+      <!-- Barra superior cargada externamente -->
+      <div id="GamePage-container"></div> 
+
+      <!-- Título con fondo gradiente -->
+      <div class="contenedor3">
+        <h1 class="titulo">Untoten Nacht</h1>
       </div>
+
+      <!-- Descripción estilizada -->
+      <div class="contenedor2">
+        <p class="descripcion">Disponible ahora en PC — ¡Sobrevive a la noche!</p>
+        <button class="jugar-btn">Jugar Ahora</button>
+      </div>
+    </div>
   </main>
+
   <script src="/src/js/config.js"></script>
   <script src="/src/js/main.js"></script>
   <script>
@@ -28,25 +33,22 @@
     jugarBtn.addEventListener("click", function () {
       const token = localStorage.getItem("token");
       if (token) {
-        // Pasa el token como parámetro en la URL
         const url = `https://videogameconstrucciondesoftware.github.io/Juego/?token=${token}`;
         window.location.href = url;
       } else {
         alert("Por favor inicia sesión antes de jugar.");
       }
     });
-</script>
-<script>
-  function GetTokenFromURL() {
-    const params = new URLSearchParams(window.location.search);
-    const token = params.get("token");
-
-    if (token) {
-      window.history.replaceState({}, document.title, window.location.pathname);
+  </script>
+  <script>
+    function GetTokenFromURL() {
+      const params = new URLSearchParams(window.location.search);
+      const token = params.get("token");
+      if (token) {
+        window.history.replaceState({}, document.title, window.location.pathname);
+      }
+      return token;
     }
-
-    return token;
-  }
-</script>
+  </script>
 </body>
 </html>

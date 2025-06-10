@@ -1,43 +1,43 @@
-
 /* Fondos y cosas generales */
 .fondo1 {
-    background-color: #1c1b22;
+    background-color: #181a1b;
 }
 
 .fondo2 {
-    background-color: #1c1b22;
+  background-color: #12131a;
 }
 
 .home {
-  margin-top: 70px; /* Ajusta el valor a la altura real de tu header */
+  margin-top: 70px;
 }
 
 .bienvenida {
-    max-width: 700px;
-    margin: 0 auto 50px auto;
-    padding: 0 16px;
+  max-width: 700px;
+  margin: 0 auto 50px auto;
+  padding: 0 16px;
+  text-align: center;
 }
 
 .bienvenida h1 {
-    font-size: 3em;
-    font-weight: bold;
-    color: #C1392B;
-    text-shadow: 2px 2px 8px #222, 0 0 20px #C1392B;
-    margin-bottom: 20px;
-    letter-spacing: 2px;
+  font-size: 2.5em;
+  font-family: 'Press Start 2P', cursive;
+  color: #C1392B;
+  margin-bottom: 20px;
+  letter-spacing: 2px;
 }
 
 .bienvenida p {
-    font-size: 1.4em;
-    color: #f0f0f0;
-    background: rgba(0, 0, 0, 0.4);
-    border: 5px solid #C1392B;
-    padding: 16px 24px;
-    border-radius: 20px;
-    box-shadow: 0 2px 12px rgba(0,0,0,0.2);
-    margin: 0 auto;
-    max-width: 600px;
-    line-height: 1.6;
+  font-size: 1.2em;
+  font-family: 'Roboto', sans-serif;
+  color: #f0f0f0;
+  background: rgba(0, 0, 0, 0.4);
+  border: 5px solid #C1392B;
+  padding: 16px 24px;
+  border-radius: 20px;
+  box-shadow: 0 2px 12px rgba(0,0,0,0.2);
+  margin: 0 auto;
+  max-width: 600px;
+  line-height: 1.6;
 }
 
 .bienvenida p {
@@ -60,22 +60,25 @@
 
 /* Secciones */
 .section {
-    display: flex;
-    flex-direction: column;
-    margin: 20px;
-    padding: 20px;
-    background-color: black;
-    border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  margin: 20px;
+  padding: 20px;
+  background-color: black;
+  border-radius: 10px;
 }
 
 .section h2 {
-    font-size: 1.8em;
-    margin-bottom: 10px;
+  font-size: 1.5em;
+  font-family: 'Press Start 2P', cursive;
+  color: #C1392B;
+  margin-bottom: 10px;
 }
 
 .section p {
-    font-size: 1em;
-    color: #ccc;
+  font-size: 1em;
+  font-family: 'Roboto', sans-serif;
+  color: #ccc;
 }
 
 .carousel {
@@ -87,23 +90,23 @@
 }
 
 .carousel-container {
-    max-width: 1000px;
-    width: 90%;
-    height: 500px;
-    position: relative;
-    margin: auto;
-    overflow: hidden;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 1000px;
+  width: 90%;
+  height: 500px;
+  margin: auto;
+  overflow: hidden;
+  position: relative;
 }
 
 .carousel-item img {
-    width: 100%; 
-    height: 100%; 
-    object-fit: contain; 
-    display: block; 
-    margin: 0 auto; 
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  display: block;
+  margin: 0 auto;
 }
   
 .carousel-item {
@@ -115,18 +118,18 @@
 }
   
 .prev, .next {
-    cursor: pointer;
-    position: absolute;
-    top: 50%;
-    width: auto;
-    margin-top: -22px;
-    padding: 16px;
-    color: white;
-    font-weight: bold;
-    font-size: 18px;
-    transition: 0.6s ease;
-    border-radius: 0 3px 3px 0;
-    user-select: none;
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
 }
   
 .prev {
@@ -153,22 +156,12 @@
     to {opacity: 1}
 }
 
-/* Imagen del carrusel */
-/*.carousel img {
-    display: block;
-    margin: 0 auto;
-}*/
-
-
-
 .carousel-controls {
     display: flex;
     justify-content: center;
     gap: 10px;
     margin-top: 10px;
 }
-
-
 
 .carousel-controls button {
     background-color: #333;

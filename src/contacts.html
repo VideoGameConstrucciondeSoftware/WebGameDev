@@ -1,11 +1,12 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
   <meta charset="UTF-8">
   <title>Contact Us</title>
-  <link rel="stylesheet" href="/src/css/style.css">
+  <link rel="stylesheet" href="/src/css/contacts.css">
+  <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
 </head>
-<body  class="fondo2">
+<body class="fondo2">
   <div id="contact">
     <section id="contact-us-container">
       <div class="form-container">
@@ -20,20 +21,19 @@
           <label for="email">Correo Electrónico<span>*</span></label>
           <input type="email" id="email" name="email" required>
 
-          <label for="company">Compañia</label>
+          <label for="company">Compañía</label>
           <input type="text" id="company" name="company">
 
           <label for="country">País de residencia</label>
           <select id="country" name="country">
             <option value="">Selecciona...</option>
-            <option value="mexico">Mexico</option>
+            <option value="mexico">México</option>
             <option value="usa">USA</option>
-            <option value="canada">Canada</option>
+            <option value="canada">Canadá</option>
           </select>
 
           <label for="mensaje">Mensaje</label>
-          <textarea  type="mensaje" id="mensaje" name="mensaje"></textarea>
-          
+          <textarea id="mensaje" name="mensaje"></textarea>
 
           <button type="submit">Contáctanos</button>
         </form>
@@ -41,8 +41,6 @@
     </section>
   </div>
   <script src="/src/js/config.js"></script>
-  <script src="/src/js/contactUs.js"></script>    
-
-
+  <script src="/src/js/contactUs.js"></script>
 </body>
 </html>

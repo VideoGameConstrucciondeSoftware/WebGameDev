@@ -1,61 +1,56 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="/src/css/style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>UntotenNacht</title>
+  <link rel="stylesheet" href="/src/css/style.css" />
+  <link rel="stylesheet" href="/src/css/Globals.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Roboto&display=swap" rel="stylesheet" />
 </head>
-<body id="home-body ">
-    <section class="home">
-        <div class="fondo2">
-            <div class="bienvenida contenedor-bienvenida">
-                <h1>Bienvenido a UntotenNacht</h1>
-                <p>UntotenNacht es un videojuego ambientado en una versión apocalíptica de la biblioteca del Tecnológico de Monterrey. </p>
-            </div>
-            
-            <div class="carousel contenedor-img-txt imagen">
-                <div class="carousel-container">
-                    <div class="carousel-item fade active">
-                        <img src="/src/img/ZombieName.png" alt="Zombie Book Image" class="imagen-aumentada">
-                    </div>
-                
-                    <div class="carousel-item fade">
-                        <img src="/src/img/biblioImage.jpg" alt="Imagen biblio" class="imagen-aumentada">
-                    </div>
-                
-                    <div class="carousel-item fade">
-                        <img src="/src/img/Logo.png" alt="Logo" class="imagen-aumentada">
-                    </div>
-                
-                    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-                    <a class="next" onclick="plusSlides(1)">&#10095;</a>
-                </div>
-                <br>
+<body id="home-body">
+  <section class="home">
+    <div class="fondo2">
+      <div class="bienvenida contenedor-bienvenida">
+        <h1 class="titulo-principal">Bienvenido a UntotenNacht</h1>
+        <p>UntotenNacht es un videojuego ambientado en una versión apocalíptica de la biblioteca del Tecnológico de Monterrey.</p>
+      </div>
 
-                <div class="contenedor-txt">
-                    <div class="section">
-                        <h2>Explora los pisos de Biblioteca</h2>
-                        <p> Recorre una recreación detallada de la biblioteca del Tec, ahora invadida por zombis.
-                        </p>
-                    </div>
+      <div class="carousel contenedor-img-txt imagen">
+        <div class="carousel-container">
+          <div class="carousel-item fade active">
+            <img src="/src/img/JugadorZombieNPC.jpg" alt="Jugador Zombie NPC" class="imagen-aumentada" />
+          </div>
+          <div class="carousel-item fade">
+            <img src="/src/img/BibliotecaJuego.jpg" alt="Imagen biblio" class="imagen-aumentada" />
+          </div>
+          <div class="carousel-item fade">
+            <img src="/src/img/LogoTotenNacht.png" alt="Logo" class="imagen-aumentada" />
+          </div>
 
-                    <div class="section">
-                        <h2>ODS 3: Salud y Bienestar en el Tec</h2>
-                        <p>Aprende sobre el Objetivo de Desarrollo Sostenible número 3: Salud y Bienestar.</p>
-                    </div>
-
-                    <div class="section">
-                        <h2>Requisitos Básicos</h2>
-                        <p>Para jugar necesitas una PC básica y conexión a internet.</p>
-                    </div>
-                </div>
-            </div>
-
-            
-
+          <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+          <a class="next" onclick="plusSlides(1)">&#10095;</a>
         </div>
-    </section>
-    <script src="/src/js/carousel.js"></script>
+
+        <div class="contenedor-txt">
+          <div class="section">
+            <h2>Explora los pisos de Biblioteca</h2>
+            <p>Recorre una recreación detallada de la biblioteca del Tec, ahora invadida por zombis.</p>
+          </div>
+
+          <div class="section">
+            <h2>ODS 3: Salud y Bienestar en el Tec</h2>
+            <p>Aprende sobre el Objetivo de Desarrollo Sostenible número 3: Salud y Bienestar.</p>
+          </div>
+
+          <div class="section">
+            <h2>Requisitos Básicos</h2>
+            <p>Para jugar necesitas una PC básica y conexión a internet.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <script src="/src/js/carousel.js"></script>
 </body>
 </html>
