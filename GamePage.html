@@ -32,12 +32,8 @@
     const jugarBtn = document.querySelector(".jugar-btn");
     jugarBtn.addEventListener("click", function () {
       const token = localStorage.getItem("token");
-      if (token) {
-        const url = `https://videogameconstrucciondesoftware.github.io/Juego/?token=${token}`;
+        const url = `https://videogameconstrucciondesoftware.github.io/Juego/`;
         window.location.href = url;
-      } else {
-        alert("Por favor inicia sesión antes de jugar.");
-      }
     });
   </script>
   <script>
