@@ -29,11 +29,13 @@ document.getElementById("registerForm").addEventListener("submit", function (eve
         },
         body: JSON.stringify(userData)
     })
-    .then(response => {
+    .then(async response => {
         if (response.ok) {
             return response.json();
         } else {
-            throw new Error("Registration failed");
+            // Leer el mensaje de error del backend
+            const errorData = await response.json();
+            throw new Error(errorData.message || "Registration failed");
         }
     })
     .then(data => {

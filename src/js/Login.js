@@ -47,6 +47,7 @@ document.addEventListener('DOMContentLoaded', function() {
             }
             return res;
         })
+        // Hola
         .then(response => {
             if (response.ok) {
                 return response.json();
