@@ -49,9 +49,17 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 51vh;
     margin: 0;
 }
+
+/* Contenedor del formulario de login */
+.login-container-register {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+}
+
 
 /* Caja de login */
 .login-box {
@@ -62,6 +70,7 @@
     width: 500px;
     text-align: center;
     color: #ccc;
+    
 }
 
 /* Título Login */
